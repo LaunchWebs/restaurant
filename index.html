@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Foodie Restaurant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">🍽 Foodie</div>
+
+  <nav id="nav">
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Book</a>
+  </nav>
+
+  <div class="controls">
+    <button id="themeToggle">🌙</button>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </div>
+</header>
+
+
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Fresh Food, Better Mood</h1>
+    <p>Modern restaurant experience with premium taste</p>
+    <a href="#menu" class="btn">Explore Menu</a>
+  </div>
+</section>
+
+
+<section id="menu" class="menu-section">
+  <h2>Our Menu</h2>
+
+  <div class="filters">
+    <button onclick="filterMenu('all')">All</button>
+    <button onclick="filterMenu('pizza')">Pizza</button>
+    <button onclick="filterMenu('burger')">Burger</button>
+    <button onclick="filterMenu('drink')">Drinks</button>
+  </div>
+
+  <div class="menu-items">
+
+    <div class="item pizza">
+      <img src="https://images.unsplash.com/photo-1601924582970-9238bcb495d9" />
+      <h3>Cheese Pizza</h3>
+      <p>$8</p>
+    </div>
+
+    <div class="item burger">
+      <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" />
+      <h3>Beef Burger</h3>
+      <p>$6</p>
+    </div>
+
+    <div class="item drink">
+      <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e" />
+      <h3>Cold Drink</h3>
+      <p>$2</p>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="about" class="about">
+  <h2>About Us</h2>
+  <p>We serve fresh, high-quality food made with passion and modern experience.</p>
+</section>
+
+
+<section id="contact" class="contact">
+  <h2>Book a Table</h2>
+
+  <form id="bookingForm">
+    <input type="text" placeholder="Your Name" required>
+    <input type="date" required>
+    <input type="number" placeholder="Guests" min="1" required>
+    <button type="submit">Reserve Now</button>
+  </form>
+
+  <p id="msg"></p>
+</section>
+
+
+<footer>
+  <div class="footer-container">
+
+    <div>
+      <h3>Foodie</h3>
+      <p>Premium dining experience with modern taste.</p>
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Book</a>
+    </div>
+
+    <div>
+      <h4>Support</h4>
+      <p>help@foodie.com</p>
+      <p>+123 456 789</p>
+    </div>
+
+  </div>
+
+  <p class="copyright">© 2026 Foodie Restaurant</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
