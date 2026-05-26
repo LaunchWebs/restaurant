@@ -1,0 +1,301 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #1b1b2f, #0f0f14);
+  color:#eaeaea;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:25px 40px;
+  background:rgba(255,255,255,0.04);
+  backdrop-filter: blur(12px);
+  border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+#ContactBtn{
+  font-size:38px;
+  letter-spacing:1px;
+}
+
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact{
+  padding:80px 20px;
+  text-align:center;
+}
+
+.split h2{
+  font-size:42px;
+  margin-bottom:15px;
+  background: linear-gradient(90deg,#7c5cff,#00d4ff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.split p{
+  max-width:600px;
+  margin:auto;
+  font-size:17px;
+  opacity:0.8;
+  line-height:1.6;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.contact-form{
+  margin-top:50px;
+  max-width:650px;
+  margin-left:auto;
+  margin-right:auto;
+
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+
+  background:rgba(255,255,255,0.04);
+  padding:30px;
+  border-radius:20px;
+  backdrop-filter: blur(10px);
+  border:1px solid rgba(255,255,255,0.08);
+}
+
+.contact-form input,
+.contact-form textarea{
+  font-family: Arial, Helvetica, sans-serif;
+  padding:14px;
+  border:none;
+  border-radius:12px;
+  background:rgba(255,255,255,0.06);
+  color:white;
+  outline:none;
+  transition:0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+  box-shadow:0 0 0 2px #7c5cff;
+}
+
+.contact-form textarea{
+  height:140px;
+  resize:none;
+}
+
+.contact-form button{
+  padding:14px;
+  border:none;
+  border-radius:12px;
+  cursor:pointer;
+  font-weight:bold;
+
+  background:linear-gradient(90deg,#7c5cff,#00d4ff);
+  color:white;
+
+  transition:0.3s;
+}
+
+.contact-form button:hover{
+  transform:translateY(-3px);
+  opacity:0.9;
+}
+
+/* =========================
+   SOCIAL ICONS
+========================= */
+
+.social-icons{
+  display:flex;
+  justify-content:center;
+  gap:18px;
+  margin:50px 0;
+}
+
+.social-icons a{
+  text-decoration: none;
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:22px;
+  color:white;
+
+  background:rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+
+  transition:0.3s;
+  border:1px solid rgba(255,255,255,0.1);
+}
+
+.social-icons a:hover{
+  transform:translateY(-6px) scale(1.1);
+  background:rgba(124,92,255,0.3);
+}
+
+
+
+
+/* FOOTER */
+
+.contact-footer{
+
+margin-top:80px;
+padding:60px 30px;
+
+background:#111;
+
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(180px,1fr));
+
+gap:40px;
+
+border-top:
+1px solid rgba(124,92,255,.3);
+}
+
+
+/* TITLES */
+
+.footer-box h3,
+.footer-box h4{
+
+margin-bottom:18px;
+
+background:
+linear-gradient(
+90deg,
+#7c5cff,
+#00d4ff
+);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+
+/* TEXT */
+
+.footer-box p{
+
+color:#bbb;
+line-height:1.8;
+}
+
+
+/* LINKS */
+
+.footer-box a{
+
+display:block;
+
+margin:10px 0;
+
+text-decoration:none;
+
+color:#aaa;
+
+transition:.3s;
+}
+
+
+.footer-box a:hover{
+
+background:
+linear-gradient(
+90deg,
+#7c5cff,
+#00d4ff
+);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+transform:
+translateX(6px);
+}
+
+
+
+/* COPYRIGHT */
+
+.copyright{
+
+text-align:center;
+
+padding:20px;
+
+background:#0a0a0a;
+
+color:#777;
+
+font-size:14px;
+
+border-top:
+1px solid rgba(255,255,255,.08);
+}
+
+
+
+
+/* =========================
+   MOBILE FOOTER (MATCH HOME PAGE)
+========================= */
+
+@media (max-width: 768px) {
+
+  .contact-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    padding: 50px 20px;
+  }
+
+  .footer-box {
+    width: 100%;
+  }
+
+  .footer-box h3,
+  .footer-box h4 {
+    font-size: 20px;
+  }
+
+  .footer-box p {
+    font-size: 15px;
+  }
+
+  .footer-box a {
+    font-size: 15px;
+  }
+
+  .copyright {
+    font-size: 14px;
+    padding: 18px;
+    text-align: center;
+  }
+}
