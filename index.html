@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Foodie Restaurant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">🍽 Foodie</div>
+
+  <nav id="nav">
+    <a href="#home">Home</a>
+    <a href="Contact.html">Contact</a>
+    <a href="#about">About</a>
+    <a href="#contact">Book</a>
+    <a href="#menu">Menu</a>
+  </nav>
+
+  <div class="controls">
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </div>
+</header>
+
+
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Fresh Food, Better Mood</h1>
+    <p>Modern restaurant experience with premium taste</p>
+    <a href="#menu" class="btn">Explore Menu</a>
+  </div>
+</section>
+
+
+<br><br><br><br><br><br>
+
+
+
+<hr class="section-line">
+<br><br>
+
+<section class="developer-note">
+
+<h2>
+Restaurant Website Demo
+</h2>
+
+<p>
+
+Demo project built by Nawid-Ziayee.
+
+Available for customization for restaurants,
+cafés, food trucks and small businesses.
+
+</p>
+
+
+<div class="services">
+
+<span>✓ Online Menus</span>
+
+<span>✓ Booking Forms</span>
+
+<span>✓ Mobile Responsive</span>
+
+<span>✓ WhatsApp Orders</span>
+
+<span>✓ Custom Design</span>
+
+</div>
+
+
+<a href="mailto:nawidziayee114@gmail.com"
+class="hire-link">
+
+Customize This Website
+
+</a>
+
+</section>
+
+<br>
+<hr class="section-line">
+
+<section id="menu" class="menu-section">
+  <h2>Our Menu</h2>
+
+  <div class="filters">
+    <button onclick="filterMenu('all')">All</button>
+    <button onclick="filterMenu('pizza')">Pizza</button>
+    <button onclick="filterMenu('burger')">Burger</button>
+    <button onclick="filterMenu('drink')">Drinks</button>
+  </div>
+
+  <div class="menu-items">
+
+    <div class="item pizza">
+      <img src="https://images.unsplash.com/photo-1601924582970-9238bcb495d9" />
+      <h3>Cheese Pizza</h3>
+      <p>$8</p>
+    </div>
+
+    <div class="item burger">
+      <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" />
+      <h3>Beef Burger</h3>
+      <p>$6</p>
+    </div>
+
+    <div class="item drink">
+      <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e" />
+      <h3>Cold Drink</h3>
+      <p>$2</p>
+    </div>
+
+  </div>
+</section>
+
+<hr class="section-line">
+
+<section id="about" class="about">
+  <h2>About Us</h2>
+  <p>We serve fresh, high-quality food made with passion and modern experience.</p>
+</section>
+
+<hr class="section-line">
+
+<section id="contact" class="contact">
+  <h2>Book a Table</h2>
+
+  <form id="bookingForm">
+    <input type="text" placeholder="Your Name" required>
+    <input type="date" required>
+    <input type="number" placeholder="Guests" min="1" required>
+    <button type="submit" class="Contactbtn">Reserve Now</button>
+  </form>
+
+  <p id="msg"></p>
+</section>
+
+
+<footer class="contact-footer">
+
+<div class="footer-box">
+
+<h3>🍽 Foodie</h3>
+
+<p>
+Fresh meals, modern atmosphere,
+and unforgettable dining experiences.
+</p>
+
+</div>
+
+
+<div class="footer-box">
+
+<h4>Quick Links</h4>
+
+<a href="index.html">Home</a>
+
+<a href="index.html">Menu</a>
+
+<a href="index.html">About</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+
+
+<div class="footer-box">
+
+<h4>Opening Hours</h4>
+
+<p>Mon - Fri : 10AM - 10PM</p>
+
+<p>Weekend : 9AM - 12AM</p>
+
+</div>
+
+
+
+<div class="footer-box">
+
+<h4>Contact</h4>
+
+<p>📞 0791911786</p>
+
+<p>📧 nawidziayee114@email.com</p>
+
+<p>📍Canada</p>
+
+</div>
+
+</footer>
+
+
+<div class="copyright">
+
+<p>
+© 2026 Foodie Restaurant.
+All rights reserved.
+</p>
+
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
